@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="soce\backimg.cpp" />
+    <ClCompile Include="soce\bossenemy.cpp" />
+    <ClCompile Include="soce\bosshoukou.cpp" />
+    <ClCompile Include="soce\bossSpawnWarning.cpp" />
+    <ClCompile Include="soce\clear.cpp" />
+    <ClCompile Include="soce\common.cpp" />
+    <ClCompile Include="soce\effect.cpp" />
+    <ClCompile Include="soce\boss.cpp" />
+    <ClCompile Include="soce\enemies.cpp" />
+    <ClCompile Include="soce\fire.cpp" />
+    <ClCompile Include="soce\gameover.cpp" />
+    <ClCompile Include="soce\health.cpp" />
+    <ClCompile Include="soce\item.cpp" />
+    <ClCompile Include="soce\object.cpp" />
+    <ClCompile Include="soce\player.cpp" />
+    <ClCompile Include="soce\randquake.cpp" />
+    <ClCompile Include="soce\scenemanager.cpp" />
+    <ClCompile Include="soce\switchControl.cpp" />
+    <ClCompile Include="soce\title.cpp" />
+    <ClCompile Include="soce\winmain.cpp" />
+    <ClCompile Include="soce\barrett.cpp" />
+    <ClCompile Include="soce\works.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="soce\backimg.h" />
+    <ClInclude Include="soce\bossenemy.h" />
+    <ClInclude Include="soce\bosshoukou.h" />
+    <ClInclude Include="soce\bossSpawnWarning.h" />
+    <ClInclude Include="soce\clear.h" />
+    <ClInclude Include="soce\common.h" />
+    <ClInclude Include="soce\config.h" />
+    <ClInclude Include="soce\effect.h" />
+    <ClInclude Include="soce\boss.h" />
+    <ClInclude Include="soce\enemies.h" />
+    <ClInclude Include="soce\fire.h" />
+    <ClInclude Include="soce\gameover.h" />
+    <ClInclude Include="soce\health.h" />
+    <ClInclude Include="soce\item.h" />
+    <ClInclude Include="soce\object.h" />
+    <ClInclude Include="soce\player.h" />
+    <ClInclude Include="soce\randquake.h" />
+    <ClInclude Include="soce\scenemanager.h" />
+    <ClInclude Include="soce\switchControl.h" />
+    <ClInclude Include="soce\barrett.h" />
+    <ClInclude Include="soce\title.h" />
+    <ClInclude Include="soce\works.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71365B7B-12B3-4558-AA62-93B1629A3CD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DxLibSampleProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>DxLibSampleProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

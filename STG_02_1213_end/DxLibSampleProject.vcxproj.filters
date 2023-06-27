@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="soce\winmain.cpp">
+      <Filter>Mains</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\enemies.cpp">
+      <Filter>parent</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\player.cpp">
+      <Filter>parent</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\common.cpp">
+      <Filter>commons</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\switchControl.cpp">
+      <Filter>commons</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\barrett.cpp">
+      <Filter>parent</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\effect.cpp">
+      <Filter>parent</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\boss.cpp">
+      <Filter>parent</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\backimg.cpp">
+      <Filter>parent</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\item.cpp" />
+    <ClCompile Include="soce\clear.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\gameover.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="soce\object.cpp">
+      <Filter>Mains</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="soce\enemies.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\player.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\common.h">
+      <Filter>commons</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\switchControl.h">
+      <Filter>commons</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\config.h">
+      <Filter>commons</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\barrett.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\effect.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\boss.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\backimg.h">
+      <Filter>parent</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\item.h" />
+    <ClInclude Include="soce\clear.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\gameover.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="soce\object.h">
+      <Filter>Mains</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Mains">
+      <UniqueIdentifier>{086ef40d-9df5-4df6-8165-d9399fbf7beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parent">
+      <UniqueIdentifier>{8cbc36e0-356f-438d-a14d-ad2a077c2d86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="commons">
+      <UniqueIdentifier>{e94ed5da-9ce0-4e57-8ad7-808916a47c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{a99b0deb-2817-4071-9421-3e11d318c4b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
