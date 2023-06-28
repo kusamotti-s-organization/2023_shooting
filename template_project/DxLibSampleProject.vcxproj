@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\config.h" />
-    <ClInclude Include="source\app.h" />
+    <ClCompile Include="source\main\app.cpp" />
+    <ClCompile Include="source\main\winmain.cpp" />
+    <ClCompile Include="source\sceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\app.cpp" />
-    <ClCompile Include="source\winmain.cpp" />
+    <ClInclude Include="source\main\app.h" />
+    <ClInclude Include="source\main\config.h" />
+    <ClInclude Include="source\sceneManager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{71365B7B-12B3-4558-AA62-93B1629A3CD8}</ProjectGuid>
