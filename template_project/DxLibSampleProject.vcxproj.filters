@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\main\app.cpp">
+      <Filter>1_main</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main\winmain.cpp">
+      <Filter>1_main</Filter>
+    </ClCompile>
+    <ClCompile Include="source\sceneManager.cpp">
+      <Filter>2_scene\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\titleScene.cpp">
+      <Filter>2_scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\scene\mainGameScene.cpp">
+      <Filter>2_scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\enemy.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\player.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\bullet.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\main\app.h">
+      <Filter>1_main</Filter>
+    </ClInclude>
+    <ClInclude Include="source\main\config.h">
+      <Filter>1_main</Filter>
+    </ClInclude>
+    <ClInclude Include="source\sceneManager.h">
+      <Filter>2_scene\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\titleScene.h">
+      <Filter>2_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\scene\mainGameScene.h">
+      <Filter>2_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common.h" />
+    <ClInclude Include="source\object\enemy.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\object\player.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\object\bullet.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="1_main">
+      <UniqueIdentifier>{4a0f0ad0-6278-4c04-a896-dfc266f86089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_scene">
+      <UniqueIdentifier>{607bded6-162c-4c4b-9a42-0f5ea3255c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2_scene\SceneManager">
+      <UniqueIdentifier>{56269c9b-efa7-4512-8d2d-a410835d6c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3_object">
+      <UniqueIdentifier>{b0aa0d42-b437-4e89-a504-5ea1e35d49e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

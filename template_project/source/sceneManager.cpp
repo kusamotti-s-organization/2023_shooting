@@ -1,14 +1,16 @@
 #include "sceneManager.h"
 
-namespace {
+#include"scene/titleScene.h"
+#include"scene/mainGameScene.h"
 
+namespace {
 	int sceneNumber=0;
 	int sceneChangeNumber = 0;
 
 }
 
 void Init_SceneManager(){
-	sceneNumber = Scene::start;
+	sceneNumber = Scene::title;
 	sceneChangeNumber = sceneNumber;
 
 }
@@ -20,13 +22,32 @@ void Updata_SceneManager(){
 
 		sceneNumber = sceneChangeNumber;
 
+		//シーン切替の解放処理
+		switch (sceneNumber) {
+		case Scene::start:
+			break;
+		case Scene::title:
+			TitleSceneDelete();
+			break;
+		case Scene::mainGame:
+			MainGameSceneDelete();
+			break;
+		case Scene::result:
+			break;
+		case Scene::staff:
+			break;
+		default:
+			break;
+		}
 		//シーン切替の初期化
 		switch (sceneNumber) {
 		case Scene::start:
 			break;
 		case Scene::title:
+			TitleSceneInit();
 			break;
 		case Scene::mainGame:
+			MainGameSceneInit();
 			break;
 		case Scene::result:
 			break;
@@ -44,8 +65,10 @@ void Updata_SceneManager(){
 	case Scene::start:
 		break;
 	case Scene::title:
+		TitleSceneUpdate();
 		break;
 	case Scene::mainGame:
+		MainGameSceneUpdate();
 		break;
 	case Scene::result:
 		break;
@@ -63,8 +86,10 @@ void Draw_SceneManager(){
 	case Scene::start:
 		break;
 	case Scene::title:
+		TitleSceneDraw();
 		break;
 	case Scene::mainGame:
+		MainGameSceneDraw();
 		break;
 	case Scene::result:
 		break;

@@ -1,0 +1,6 @@
+#pragma once
+
+void TitleSceneInit();
+void TitleSceneUpdate();
+void TitleSceneDraw();
+void TitleSceneDelete();
