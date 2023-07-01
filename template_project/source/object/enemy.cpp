@@ -4,6 +4,7 @@
 #include"../main/config.h"
 #include"../common.h"
 #include"../sceneManager.h"
+#include"graphic.h"
 
 //#define MAX_ENEMY_NUM (5 +1)
 
@@ -18,7 +19,7 @@ namespace {
 
 	int frameCounter;
 	int instanceCount;
-	int insranceTime;
+	int instanceTime;
 	int enemiesKillCount;
 }
 
@@ -30,7 +31,7 @@ void EnemyInit(){
 	}
 	frameCounter = 0;
 	instanceCount =0;
-	insranceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
+	instanceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
 	enemiesKillCount = 0;
 }
 
@@ -46,7 +47,7 @@ void EnemyUpdate(){
 
 	//ìGÇÃê∂ê¨
 	if (enemiesKillCount <= instanceGoalNum)
-	if (frameCounter% insranceTime == 0) {
+	if (frameCounter% instanceTime == 0) {
 		bool instanceSuccess = false;
 		for (int i = 0; i < MAX_ENEMY_NUM; ++i) {
 			Enemy enemy = enemies[i];
@@ -63,7 +64,7 @@ void EnemyUpdate(){
 		if(instanceSuccess)
 			++instanceCount;
 
-		insranceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
+		instanceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
 	}
 
 	//ìGà⁄ìÆ
@@ -96,9 +97,14 @@ void EnemyDraw(){
 		
 		if (!enemy.isActive)
 			continue;
-		
-		DrawCircleAA(enemy.m_position.x,enemy.m_position.y,5.f,22,0xffff0f);
+
+		if(GetRand(1) ==0)
+		TargetGraphicDrawColor(enemy.m_position.x, enemy.m_position.y, 20.f);
+		else
+		TargetGraphicDrawMono(enemy.m_position.x, enemy.m_position.y, 20.f);
+	//	DrawCircleAA(enemy.m_position.x,enemy.m_position.y,5.f,22,0xffff0f);
 	}
+	SetBackgroundColor(20,0xff,0xff);
 }
 
 void EnemyDelete(){

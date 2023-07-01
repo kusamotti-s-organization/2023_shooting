@@ -25,6 +25,7 @@
     <ClCompile Include="source\object\bullet.cpp">
       <Filter>3_object</Filter>
     </ClCompile>
+    <ClCompile Include="source\object\graphic.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\main\app.h">
@@ -52,6 +53,7 @@
     <ClInclude Include="source\object\bullet.h">
       <Filter>3_object</Filter>
     </ClInclude>
+    <ClInclude Include="source\object\graphic.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="1_main">
