@@ -12,7 +12,8 @@ namespace {
 		Position m_position;
 		bool isActive;
 	};
-	constexpr int MAX_ENEMY_NUM = 5 +1;
+	constexpr int MAX_ENEMY_NUM = 100 +1;
+	constexpr float ENMEY_INSTANCE_TIME = 0.2f;
 	Enemy enemies[MAX_ENEMY_NUM];
 
 	int frameCounter;
@@ -29,7 +30,7 @@ void EnemyInit(){
 	}
 	frameCounter = 0;
 	instanceCount =0;
-	insranceTime=GetRand(60*2);
+	insranceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
 	enemiesKillCount = 0;
 }
 
@@ -52,7 +53,7 @@ void EnemyUpdate(){
 			if (enemy.isActive)
 				continue;
 
-			enemies[i].m_position.x= 100+GetRand(SCREEN_WIDTH-100);
+			enemies[i].m_position.x= 100.f+GetRand(SCREEN_WIDTH-100);
 			enemies[i].m_position.y=0;
 			enemies[i].isActive = true;
 			instanceSuccess = true;
@@ -62,7 +63,7 @@ void EnemyUpdate(){
 		if(instanceSuccess)
 			++instanceCount;
 
-		insranceTime = GetRand(60 * 2)+1;
+		insranceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
 	}
 
 	//“GˆÚ“®
