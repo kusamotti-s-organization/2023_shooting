@@ -6,20 +6,21 @@
 #include"graphic.h"
 
 namespace {
-	constexpr float BULLET_SPEED = 3.f;
+	constexpr float BULLET_SPEED = 8.f;
 	struct Bullet {
 		Position m_position;
 		float radius;
 		bool isActive;
 	};
-	constexpr int MAX_BULLET_NUM = 50 + 1;
+	constexpr int MAX_BULLET_NUM = 300 + 1;
 	Bullet bullets[MAX_BULLET_NUM];
+	constexpr float BULLETS_RADIUS= 30.f;
 }
 
 void BulletInit(){
 	for (int i = 0; i < MAX_BULLET_NUM; ++i) {
 		bullets[i].m_position = Position{0,0};
-		bullets[i].radius=3.f;
+		bullets[i].radius= BULLETS_RADIUS;
 		bullets[i].isActive = false;
 	}
 }
@@ -53,7 +54,7 @@ void BulletUpdate(){
 		if (!bullet.isActive)
 			continue;
 
-		bool isCollision= EnemyToBulletCollision(bullet.m_position.x,bullet.m_position.y,bullet.radius);
+		bool isCollision= EnemyToBulletCollision(bullet.m_position.x,bullet.m_position.y,bullet.radius/2);
 		if (!isCollision)
 			continue;
 		bullets[i].isActive = false;
@@ -66,8 +67,8 @@ void BulletDraw(){
 		if (!bullet.isActive)
 			continue;
 	
-		DrawCircleAA(bullet.m_position.x,bullet.m_position.y, bullet.radius,22,0xff0fff);
-		ArrowGraphicDrawUp(bullet.m_position.x, bullet.m_position.y, bullet.radius*10);
+		//DrawCircleAA(bullet.m_position.x,bullet.m_position.y, bullet.radius,22,0xff0fff);
+		ArrowGraphicDrawUp(bullet.m_position.x, bullet.m_position.y, bullet.radius);
 	}
 }
 

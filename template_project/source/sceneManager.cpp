@@ -10,8 +10,9 @@ namespace {
 }
 
 void Init_SceneManager(){
-	sceneNumber = Scene::title;
-	sceneChangeNumber = sceneNumber;
+	sceneNumber = Scene::start;
+	sceneChangeNumber = Scene::title;
+
 
 }
 

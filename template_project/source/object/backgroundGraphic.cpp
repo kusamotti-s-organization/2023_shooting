@@ -8,20 +8,23 @@ namespace {
 	int backgraphic;
 }
 
-void backgroundGraphicInit(){
+void BackgroundGraphicInit(){
 	backgraphic = LoadGraph("data/texture/”wŒiŽÊ^•âŠ®‚Ì‰ï/mirai1.jpg");
 	assert(backgraphic > 0);
 }
 
-void backgroundGraphicUpdate(){
+void BackgroundGraphicUpdate(){
 
 }
 
-void backgroundGraphicDraw(){
+void BackgroundGraphicDraw(){
+	SetDrawBright(255/3,255/3,255);
 	DrawExtendGraph(0,0,SCREEN_WIDTH,SCREEN_HEIGHT,backgraphic,TRUE);
+	SetDrawBright(255,255,255);
+
 }
 
-void backgroundGraphicDelete(){
+void BackgroundGraphicDelete(){
 	if(backgraphic>0)
 		DeleteGraph(backgraphic);
 	backgraphic = -1;

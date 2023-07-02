@@ -6,3 +6,15 @@ void EnemyDraw();
 void EnemyDelete();
 
 bool EnemyToBulletCollision(float x,float y,float radius);
+void EnemyCreate(float x,float y,float mx,float my,bool color = true);
+int GetKillNum();
+int GetInstanceNum();
+void ResetInstanceNum();
+int GetActiveEnemy();
+enum EnemyMovePatternState {
+	left=0//¶‚©‚ç‰E‚Ö
+	,right//‰E‚©‚ç¶‚Ö
+	,top
+};
+void EnemyMovePattarn(EnemyMovePatternState pattarn);
+

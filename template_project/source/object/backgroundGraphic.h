@@ -1,6 +1,6 @@
 #pragma once
 
-void backgroundGraphicInit();
-void backgroundGraphicUpdate();
-void backgroundGraphicDraw();
-void backgroundGraphicDelete();
+void BackgroundGraphicInit();
+void BackgroundGraphicUpdate();
+void BackgroundGraphicDraw();
+void BackgroundGraphicDelete();

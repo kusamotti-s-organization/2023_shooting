@@ -23,7 +23,7 @@ namespace {
 
 }
 
-void destroyEffectInit() {
+void DestroyEffectInit() {
 	for (int i = 0; i < MAX_EFFECT_NUM; ++i) {
 		effects[i].circle = { 0,0,0 };
 		effects[i].active = false;
@@ -32,7 +32,7 @@ void destroyEffectInit() {
 	}
 }
 
-void destroyEffectUpdate() {
+void DestroyEffectUpdate() {
 
 	/*for (int i = 0; i < MAX_EFFECT_NUM; ++i) {
 		if ( !effects[i].active)
@@ -43,7 +43,7 @@ void destroyEffectUpdate() {
 
 	//test
 #ifdef _DEBUG
-	if (CheckHitKey(KEY_INPUT_SPACE)) {
+	if (CheckHitKey(KEY_INPUT_SPACE) && CheckHitKey(KEY_INPUT_LSHIFT)) {
 		EffectOn(450, 450, 20);
 	}
 #endif
@@ -57,7 +57,7 @@ void destroyEffectUpdate() {
 //void StarCricleDraw(float x, float y, float r);
 void DestroyEffectMob();
 
-void destroyEffectDraw() {
+void DestroyEffectDraw() {
 	DestroyEffectMob();
 
 	////test
@@ -73,7 +73,7 @@ void destroyEffectDraw() {
 	////test--
 }
 
-void destroyEffectDelete() {
+void DestroyEffectDelete() {
 }
 
 void CreateEffect(float x, float y, float r);

@@ -1,8 +1,8 @@
 #pragma once
 
-void destroyEffectInit();
-void destroyEffectUpdate();
-void destroyEffectDraw();
-void destroyEffectDelete ();
+void DestroyEffectInit();
+void DestroyEffectUpdate();
+void DestroyEffectDraw();
+void DestroyEffectDelete ();
 
 void EffectOn(float x,float y,float r);

@@ -69,3 +69,10 @@ void ArrowGraphicDrawUp(float x,float y,float s){
 	DrawTriangleAA(x,yArrowHead,x- tenTreeSize, yArrowHeadEnd,x+ tenTreeSize, yArrowHeadEnd,0xaaaaaa,TRUE);
 	
 }
+
+void PlayerGraphicDraw(float x, float y, float s,int color){
+	float halfSize = s / 2.f;
+	DrawCircleAA(x - (halfSize-s/10.f)-1,y-s/50.f,s/2.5f,22,color);
+	DrawCircleAA(x + (halfSize-s/10.f),y-s/50.f,s/2.5f,22,color);
+	DrawTriangleAA(x,y + s,x- (s-s/10.f),y,x + (s-s/10),y,color,TRUE);
+}

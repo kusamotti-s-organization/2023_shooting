@@ -19,6 +19,7 @@
     <ClCompile Include="source\object\enemy.cpp" />
     <ClCompile Include="source\object\graphic.cpp" />
     <ClCompile Include="source\object\player.cpp" />
+    <ClCompile Include="source\object\wave.cpp" />
     <ClCompile Include="source\sceneManager.cpp" />
     <ClCompile Include="source\scene\mainGameScene.cpp" />
     <ClCompile Include="source\scene\titleScene.cpp" />
@@ -32,6 +33,7 @@
     <ClInclude Include="source\object\graphic.h" />
     <ClInclude Include="source\object\backgroundGraphic.h" />
     <ClInclude Include="source\object\destroyEffect.h" />
+    <ClInclude Include="source\object\wave.h" />
     <ClInclude Include="source\sceneManager.h" />
     <ClInclude Include="source\scene\titleScene.h" />
     <ClInclude Include="source\scene\mainGameScene.h" />

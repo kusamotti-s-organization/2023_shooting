@@ -31,7 +31,12 @@
     <ClCompile Include="source\object\backgroundGraphic.cpp">
       <Filter>3_object</Filter>
     </ClCompile>
-    <ClCompile Include="source\object\destroyEffect.cpp" />
+    <ClCompile Include="source\object\destroyEffect.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\wave.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\main\app.h">
@@ -66,6 +71,9 @@
       <Filter>3_object</Filter>
     </ClInclude>
     <ClInclude Include="source\object\destroyEffect.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\object\wave.h">
       <Filter>3_object</Filter>
     </ClInclude>
   </ItemGroup>
