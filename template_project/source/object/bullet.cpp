@@ -3,6 +3,7 @@
 #include<DxLib.h>
 #include"../common.h"
 #include"enemy.h"
+#include"graphic.h"
 
 namespace {
 	constexpr float BULLET_SPEED = 3.f;
@@ -66,6 +67,7 @@ void BulletDraw(){
 			continue;
 	
 		DrawCircleAA(bullet.m_position.x,bullet.m_position.y, bullet.radius,22,0xff0fff);
+		ArrowGraphicDrawUp(bullet.m_position.x, bullet.m_position.y, bullet.radius*10);
 	}
 }
 

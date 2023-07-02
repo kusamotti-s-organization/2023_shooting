@@ -49,3 +49,23 @@ void TargetGraphicDrawMono(float x,float y,float r) {
 	//”’
 	DrawCircleAA(x,y,r*1/6.f,22,0xffffff);
 }
+
+void ArrowGraphicDrawUp(float x,float y,float s){
+	float tenTree=3/10.f;
+	float tenTreeSize = s*tenTree;
+	//‰H
+	for (int i = 6; i >= 0; --i) {
+		float offset = 1 / 10.f *i;
+
+		
+		DrawTriangleAA(x, y+s -(s * i / 10)-offset, x - tenTreeSize, y + s - offset, x + tenTreeSize, y + s - offset, 0xdddddd * (i % 2), TRUE);
+	}
+	//–î‚Ì•¿‚Ì‚Ù‚¤
+	DrawBoxAA(x-s/10,y-s*9/10.f ,x+s/10,y+s,0xdddd99,TRUE);
+
+	//–î‚¶‚è
+	float yArrowHead = y - s;
+	float yArrowHeadEnd = yArrowHead+ tenTreeSize;
+	DrawTriangleAA(x,yArrowHead,x- tenTreeSize, yArrowHeadEnd,x+ tenTreeSize, yArrowHeadEnd,0xaaaaaa,TRUE);
+	
+}
