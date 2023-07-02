@@ -30,11 +30,11 @@ void MainGameSceneUpdate(){
 
 void MainGameSceneDraw(){
 	backgroundGraphicDraw();
-	PlayerDraw();
+	destroyEffectDraw();
 	EnemyDraw();
 	BulletDraw();
+	PlayerDraw();
 
-	destroyEffectDraw();
 }
 
 void MainGameSceneDelete(){
