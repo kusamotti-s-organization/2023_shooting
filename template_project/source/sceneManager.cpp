@@ -2,6 +2,7 @@
 
 #include"scene/titleScene.h"
 #include"scene/mainGameScene.h"
+#include"scene/resultScene.h"
 
 namespace {
 	int sceneNumber=0;
@@ -34,6 +35,7 @@ void Updata_SceneManager(){
 			MainGameSceneDelete();
 			break;
 		case Scene::result:
+			ResultSceneDelete();
 			break;
 		case Scene::staff:
 			break;
@@ -51,6 +53,7 @@ void Updata_SceneManager(){
 			MainGameSceneInit();
 			break;
 		case Scene::result:
+			ResultSceneInit();
 			break;
 		case Scene::staff:
 			break;
@@ -72,6 +75,7 @@ void Updata_SceneManager(){
 		MainGameSceneUpdate();
 		break;
 	case Scene::result:
+		ResultSceneUpdate();
 		break;
 	case Scene::staff:
 		break;
@@ -93,6 +97,7 @@ void Draw_SceneManager(){
 		MainGameSceneDraw();
 		break;
 	case Scene::result:
+		ResultSceneDraw();
 		break;
 	case Scene::staff:
 		break;

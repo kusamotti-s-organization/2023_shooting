@@ -22,6 +22,7 @@
     <ClCompile Include="source\object\wave.cpp" />
     <ClCompile Include="source\sceneManager.cpp" />
     <ClCompile Include="source\scene\mainGameScene.cpp" />
+    <ClCompile Include="source\scene\resultScene.cpp" />
     <ClCompile Include="source\scene\titleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +39,7 @@
     <ClInclude Include="source\scene\titleScene.h" />
     <ClInclude Include="source\scene\mainGameScene.h" />
     <ClInclude Include="source\common.h" />
+    <ClInclude Include="source\scene\resultScene.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{71365B7B-12B3-4558-AA62-93B1629A3CD8}</ProjectGuid>

@@ -5,6 +5,7 @@
 #include<cassert>
 #include<cmath>
 #include"../main/config.h"
+#include"../sceneManager.h"
 #include"enemy.h"
 
 namespace {
@@ -56,21 +57,22 @@ void WaveUpdate(){
 	}
 	if (instance) {
 		switch (state) {
-		case start:
+		case State::start:
 			break;
-		case wave1_mob:
+		case State::wave1_mob:
 			EnemyMovePattarn(EnemyMovePatternState::right);
 			break;
-		case wave2_mob:
+		case State::wave2_mob:
 			EnemyMovePattarn(EnemyMovePatternState::left);
 			break;
-		case wave3_mobAll:
+		case State::wave3_mobAll:
 			EnemyMovePattarn(EnemyMovePatternState::top);
 			break;
-		case wave4_boss:
+		case State::wave4_boss:
 			//boss
+			ChangeScene(Scene::result);
 			break;
-		case max:
+		case State::max:
 
 			break;
 		default:
