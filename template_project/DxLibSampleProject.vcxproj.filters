@@ -25,7 +25,12 @@
     <ClCompile Include="source\object\bullet.cpp">
       <Filter>3_object</Filter>
     </ClCompile>
-    <ClCompile Include="source\object\graphic.cpp" />
+    <ClCompile Include="source\object\graphic.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\object\backgroundGraphic.cpp">
+      <Filter>3_object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\main\app.h">
@@ -53,7 +58,12 @@
     <ClInclude Include="source\object\bullet.h">
       <Filter>3_object</Filter>
     </ClInclude>
-    <ClInclude Include="source\object\graphic.h" />
+    <ClInclude Include="source\object\graphic.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\object\backgroundGraphic.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="1_main">

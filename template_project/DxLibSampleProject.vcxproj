@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="source\main\app.cpp" />
     <ClCompile Include="source\main\winmain.cpp" />
+    <ClCompile Include="source\object\backgroundGraphic.cpp" />
     <ClCompile Include="source\object\bullet.cpp" />
     <ClCompile Include="source\object\enemy.cpp" />
     <ClCompile Include="source\object\graphic.cpp" />
@@ -28,6 +29,7 @@
     <ClInclude Include="source\object\player.h" />
     <ClInclude Include="source\object\bullet.h" />
     <ClInclude Include="source\object\graphic.h" />
+    <ClInclude Include="source\object\backgroundGraphic.h" />
     <ClInclude Include="source\sceneManager.h" />
     <ClInclude Include="source\scene\titleScene.h" />
     <ClInclude Include="source\scene\mainGameScene.h" />

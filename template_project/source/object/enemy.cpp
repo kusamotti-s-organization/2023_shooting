@@ -98,13 +98,12 @@ void EnemyDraw(){
 		if (!enemy.isActive)
 			continue;
 
-		if(GetRand(1) ==0)
 		TargetGraphicDrawColor(enemy.m_position.x, enemy.m_position.y, 20.f);
-		else
-		TargetGraphicDrawMono(enemy.m_position.x, enemy.m_position.y, 20.f);
+		//TargetGraphicDrawMono(enemy.m_position.x, enemy.m_position.y, 20.f);
+
 	//	DrawCircleAA(enemy.m_position.x,enemy.m_position.y,5.f,22,0xffff0f);
 	}
-	SetBackgroundColor(20,0xff,0xff);
+
 }
 
 void EnemyDelete(){
