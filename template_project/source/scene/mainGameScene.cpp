@@ -4,6 +4,7 @@
 #include"../object/enemy.h"
 #include"../object/bullet.h"
 #include"../object/backgroundGraphic.h"
+#include"../object/destroyEffect.h"
 
 namespace {
 
@@ -14,6 +15,8 @@ void MainGameSceneInit(){
 	EnemyInit();
 	PlayerInit();
 	BulletInit();
+
+	destroyEffectInit();
 }
 
 void MainGameSceneUpdate(){
@@ -21,6 +24,8 @@ void MainGameSceneUpdate(){
 	BulletUpdate();
 	EnemyUpdate();
 	backgroundGraphicUpdate();
+
+	destroyEffectUpdate();
 }
 
 void MainGameSceneDraw(){
@@ -29,6 +34,7 @@ void MainGameSceneDraw(){
 	EnemyDraw();
 	BulletDraw();
 
+	destroyEffectDraw();
 }
 
 void MainGameSceneDelete(){
@@ -37,4 +43,5 @@ void MainGameSceneDelete(){
 	EnemyDelete();
 	BulletDelete();
 
+	destroyEffectDelete();
 }

@@ -31,6 +31,7 @@
     <ClCompile Include="source\object\backgroundGraphic.cpp">
       <Filter>3_object</Filter>
     </ClCompile>
+    <ClCompile Include="source\object\destroyEffect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\main\app.h">
@@ -62,6 +63,9 @@
       <Filter>3_object</Filter>
     </ClInclude>
     <ClInclude Include="source\object\backgroundGraphic.h">
+      <Filter>3_object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\object\destroyEffect.h">
       <Filter>3_object</Filter>
     </ClInclude>
   </ItemGroup>

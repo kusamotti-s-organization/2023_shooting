@@ -5,6 +5,7 @@
 #include"../common.h"
 #include"../sceneManager.h"
 #include"graphic.h"
+#include"destroyEffect.h"
 
 //#define MAX_ENEMY_NUM (5 +1)
 
@@ -127,6 +128,7 @@ bool EnemyToBulletCollision(float a_x, float a_y, float a_radius){
 		
 		enemies[i].isActive = false;
 		++enemiesKillCount;
+		EffectOn(enemy.m_position.x,enemy.m_position.y,20);
 		
 		break;
 	}
