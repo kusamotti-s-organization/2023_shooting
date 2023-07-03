@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+//メインに書く用
 namespace APP {
 	void Init()		;
 	void Update()	;

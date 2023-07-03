@@ -3,22 +3,26 @@
 #include<DxLib.h>
 
 namespace {
-
+	//変数用
+	//namespaceは他の使い方もあり
 }
 
 void GraphicInit(){
-
+	//使わなかった
 }
 
 void GraphicUpdate(){
+	//使わなかった
 
 }
 
 void GraphicDraw(){
+	//使わなかった
 
 }
 
 void GraphicDelete(){
+	//使わなかった
 
 }
 
@@ -57,15 +61,16 @@ void ArrowGraphicDrawUp(float x,float y,float s){
 	for (int i = 6; i >= 0; --i) {
 		float offset = 1 / 10.f *i;
 
-		
+		//概ね灰色 と白色
 		DrawTriangleAA(x, y+s -(s * i / 10)-offset, x - tenTreeSize, y + s - offset, x + tenTreeSize, y + s - offset, 0xdddddd * (i % 2), TRUE);
 	}
-	//矢の柄のほう
+	//矢の柄のほう 概ね黄色 0xdddd99
 	DrawBoxAA(x-s/10,y-s*9/10.f ,x+s/10,y+s,0xdddd99,TRUE);
 
 	//矢じり
 	float yArrowHead = y - s;
 	float yArrowHeadEnd = yArrowHead+ tenTreeSize;
+	//概ね灰色 0xaaaaaa
 	DrawTriangleAA(x,yArrowHead,x- tenTreeSize, yArrowHeadEnd,x+ tenTreeSize, yArrowHeadEnd,0xaaaaaa,TRUE);
 	
 }

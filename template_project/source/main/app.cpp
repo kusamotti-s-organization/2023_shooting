@@ -5,6 +5,7 @@
 #include"config.h"
 #include"../sceneManager.h"
 
+//メインに書く用
 namespace APP {
 	void Init() {
 		Init_SceneManager();
@@ -20,12 +21,20 @@ namespace APP {
 	}
 
 	bool GameEnd() {
-		if (CheckHitKey(KEY_INPUT_ESCAPE)) 
+		//エスケープキーを押したら
+		if (CheckHitKey(KEY_INPUT_ESCAPE))
+		{
+			//早期リターン
 			return true;
-
+		}
+		//左CtrlとWキーを押したら
 		if (CheckHitKey(KEY_INPUT_W) && CheckHitKey(KEY_INPUT_LCONTROL))
+		{
+			//早期リターン
 			return true;
+		}
 
+		//結果を返す
 		return false;
 	}
 }

@@ -11,13 +11,15 @@
 #include"../object/wave.h"
 
 namespace {
-	int count;
-	bool feedoutEnd;
+	int count;//カウンタ
+	bool feedoutEnd;//フェードしているか
 }
 
 void MainGameSceneInit(){
 	count = 0;
 	feedoutEnd = false;
+
+	//それぞれの関数を呼び出す
 
 	BackgroundGraphicInit();
 	EnemyInit();
@@ -29,15 +31,25 @@ void MainGameSceneInit(){
 }
 
 void MainGameSceneUpdate(){
-	if ( !feedoutEnd) {
+	//フェード開始していないなら
+	if ( !feedoutEnd) 
+	{
+		//カウンタ
 		++count;
 
-		if (count > 90) {
+		//カウンタが90より大きいなら
+		if (count > 90) 
+		{
+			//フェード開始
 			feedoutEnd = true;
 		}
 
+		//早期リターン
 		return;
 	}
+
+	//それぞれの関数Ｕｐｄａｔｅ処理
+
 	PlayerUpdate();
 	BulletUpdate();
 	WaveUpdate();
@@ -48,6 +60,8 @@ void MainGameSceneUpdate(){
 }
 
 void MainGameSceneDraw(){
+	//それぞれの関数Draw処理
+
 	BackgroundGraphicDraw();
 	DestroyEffectDraw();
 	EnemyDraw();
@@ -55,16 +69,25 @@ void MainGameSceneDraw(){
 	PlayerDraw();
 	WaveDraw();
 
-	if (!feedoutEnd) {
-	float cosValue = (float)std::abs(std::cos((count) * DX_PI / 180));
-	int feed = (int)(255* cosValue);
-		SetDrawBlendMode(DX_BLENDMODE_ALPHA,feed);
-		DrawBox(0,0,SCREEN_WIDTH,SCREEN_HEIGHT,0x0,TRUE);
-		SetDrawBlendMode(DX_BLENDMODE_NOBLEND,0);
+	//フェード開始していないなら
+	if (!feedoutEnd)
+	{
+		//cosの値
+		float cosValue = (float)std::abs(std::cos((count)*DX_PI / 180));
+		//フェードの値
+		int feed = (int)(255 * cosValue);
+		//半透明の設定
+		SetDrawBlendMode(DX_BLENDMODE_ALPHA, feed);
+		//黒画面の描画 黒0x0
+		DrawBox(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0x0, TRUE);
+		//半透明の解除
+		SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 	}
 }
 
 void MainGameSceneDelete(){
+	//それぞれの関数メモリ開放処理
+
 	BackgroundGraphicDelete();
 	PlayerDelete();
 	EnemyDelete();

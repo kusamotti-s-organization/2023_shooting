@@ -5,13 +5,14 @@
 #include"scene/resultScene.h"
 
 namespace {
-	int sceneNumber=0;
-	int sceneChangeNumber = 0;
+	int sceneNumber=0;//現在のシーン番号
+	int sceneChangeNumber = 0;//次のシーン番号
 
 }
 
 void Init_SceneManager(){
 	sceneNumber = Scene::start;
+	//ここは次のシーンを入れないとバグる
 	sceneChangeNumber = Scene::title;
 
 
@@ -20,89 +21,94 @@ void Init_SceneManager(){
 void Updata_SceneManager(){
 
 	//もし、シーン変更がかかっていたら
-	if (sceneNumber != sceneChangeNumber) {
-
+	if (sceneNumber != sceneChangeNumber)
+	{
+		//シーンを現在に代入
 		sceneNumber = sceneChangeNumber;
 
 		//シーン切替の解放処理
-		switch (sceneNumber) {
-		case Scene::start:
-			break;
-		case Scene::title:
-			TitleSceneDelete();
-			break;
-		case Scene::mainGame:
-			MainGameSceneDelete();
-			break;
-		case Scene::result:
-			ResultSceneDelete();
-			break;
-		case Scene::staff:
-			break;
-		default:
-			break;
+		switch (sceneNumber)
+		{
+			case Scene::start:
+				break;
+			case Scene::title:
+				TitleSceneDelete();
+				break;
+			case Scene::mainGame:
+				MainGameSceneDelete();
+				break;
+			case Scene::result:
+				ResultSceneDelete();
+				break;
+			case Scene::staff:
+				break;
+			default:
+				break;
 		}
 		//シーン切替の初期化
-		switch (sceneNumber) {
-		case Scene::start:
-			break;
-		case Scene::title:
-			TitleSceneInit();
-			break;
-		case Scene::mainGame:
-			MainGameSceneInit();
-			break;
-		case Scene::result:
-			ResultSceneInit();
-			break;
-		case Scene::staff:
-			break;
-		default:
-			break;
+		switch (sceneNumber) 
+		{
+			case Scene::start:
+				break;
+			case Scene::title:
+				TitleSceneInit();
+				break;
+			case Scene::mainGame:
+				MainGameSceneInit();
+				break;
+			case Scene::result:
+				ResultSceneInit();
+				break;
+			case Scene::staff:
+				break;
+			default:
+				break;
 		}
 
 
 	}
 
 	//update
-	switch (sceneNumber){
-	case Scene::start:
-		break;
-	case Scene::title:
-		TitleSceneUpdate();
-		break;
-	case Scene::mainGame:
-		MainGameSceneUpdate();
-		break;
-	case Scene::result:
-		ResultSceneUpdate();
-		break;
-	case Scene::staff:
-		break;
-	default:
-		break;
+	switch (sceneNumber)
+	{
+		case Scene::start:
+			break;
+		case Scene::title:
+			TitleSceneUpdate();
+			break;
+		case Scene::mainGame:
+			MainGameSceneUpdate();
+			break;
+		case Scene::result:
+			ResultSceneUpdate();
+			break;
+		case Scene::staff:
+			break;
+		default:
+			break;
 	}
 
 }
 
 void Draw_SceneManager(){
 	//darw
-	switch (sceneNumber) {
-	case Scene::start:
-		break;
-	case Scene::title:
-		TitleSceneDraw();
-		break;
-	case Scene::mainGame:
-		MainGameSceneDraw();
-		break;
-	case Scene::result:
-		ResultSceneDraw();
-		break;
-	case Scene::staff:
-		break;
-	default:
-		break;
+	switch (sceneNumber) 
+	{
+		case Scene::start:
+			break;
+		case Scene::title:
+			TitleSceneDraw();
+			break;
+		case Scene::mainGame:
+			MainGameSceneDraw();
+			break;
+		case Scene::result:
+			ResultSceneDraw();
+			break;
+		case Scene::staff:
+			break;
+		default:
+			break;
 	}
 
 }

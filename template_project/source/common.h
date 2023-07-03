@@ -1,18 +1,22 @@
 ﻿#pragma once
 
+//座標（使用用途概ね　座標　ベクトル
 struct Position {
 	float x, y;
 };
 
+//円の構造体
 struct Circle{
 	Position m_position;
 	float radius;
 };
 
+//構造体を１行で代入する為
 inline Circle GetCircle(float x,float y,float radius) {
 	return Circle{ Position{x,y},radius };
 }
 
+//円の当たり判定
 inline bool CircleCollision(Circle c1,Circle c2) {
 	Position vector = {};
 	vector.x = c1.m_position.x - c2.m_position.x;
@@ -32,6 +36,7 @@ namespace color {
 	//h0～360
 	//s0～255
 	//v0～255
+	//RGB to HSV
 	int inline GetHSV(int h, int s, int v) {
 
 		float hr = (float)h, sg = (float)s, vb = (float)v;

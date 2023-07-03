@@ -4,9 +4,9 @@ enum Scene {
 	start = 0
 	,title
 	,mainGame
-	,result
-	,staff
-	,max
+	,result//現在はクリア画面になっている。。。
+	,staff//使わなかった
+	,max//最大数
 };
 
 void Init_SceneManager();
