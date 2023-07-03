@@ -1,4 +1,4 @@
-#include "sceneManager.h"
+ï»¿#include "sceneManager.h"
 
 #include"scene/titleScene.h"
 #include"scene/mainGameScene.h"
@@ -19,12 +19,12 @@ void Init_SceneManager(){
 
 void Updata_SceneManager(){
 
-	//‚à‚µAƒV[ƒ“•ÏX‚ª‚©‚©‚Á‚Ä‚¢‚½‚ç
+	//ã‚‚ã—ã€ã‚·ãƒ¼ãƒ³å¤‰æ›´ãŒã‹ã‹ã£ã¦ã„ãŸã‚‰
 	if (sceneNumber != sceneChangeNumber) {
 
 		sceneNumber = sceneChangeNumber;
 
-		//ƒV[ƒ“Ø‘Ö‚Ì‰ğ•úˆ—
+		//ã‚·ãƒ¼ãƒ³åˆ‡æ›¿ã®è§£æ”¾å‡¦ç†
 		switch (sceneNumber) {
 		case Scene::start:
 			break;
@@ -42,7 +42,7 @@ void Updata_SceneManager(){
 		default:
 			break;
 		}
-		//ƒV[ƒ“Ø‘Ö‚Ì‰Šú‰»
+		//ã‚·ãƒ¼ãƒ³åˆ‡æ›¿ã®åˆæœŸåŒ–
 		switch (sceneNumber) {
 		case Scene::start:
 			break;
@@ -112,10 +112,10 @@ void Delete_SceneManager(){
 }
 
 bool ChangeScene(Scene scene){
-	//0ˆÈ‰º‚È‚çƒV[ƒ“•ÏX‚Å‚«‚È‚¢
+	//0ä»¥ä¸‹ãªã‚‰ã‚·ãƒ¼ãƒ³å¤‰æ›´ã§ããªã„
 	if ((int)scene < (int)Scene::start)
 		return false;
-	//¡‚ ‚éƒV[ƒ“‚æ‚è‘å‚«‚¢”š‚Íw’è‚Å‚«‚È‚¢
+	//ä»Šã‚ã‚‹ã‚·ãƒ¼ãƒ³ã‚ˆã‚Šå¤§ãã„æ•°å­—ã¯æŒ‡å®šã§ããªã„
 	if ((int)scene >= ((int)Scene::max) - 1 )
 		return false;
 

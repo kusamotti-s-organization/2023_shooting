@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 void GraphicInit();
 void GraphicUpdate();

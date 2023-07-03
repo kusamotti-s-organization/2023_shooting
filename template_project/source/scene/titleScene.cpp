@@ -1,4 +1,4 @@
-#include "titleScene.h"
+ï»¿#include "titleScene.h"
 
 #include<DxLib.h>
 #include<string>
@@ -9,7 +9,7 @@
 
 
 namespace {
-	std::string dispStr = "“I‚ ‚ÄƒVƒ…[ƒeƒBƒ“ƒO";
+	std::string dispStr = "çš„ã‚ã¦ã‚·ãƒ¥ãƒ¼ãƒ†ã‚£ãƒ³ã‚°";
 	int feedCounter;
 	int titleFont;
 	int titleFontSize;
@@ -20,7 +20,7 @@ namespace {
 
 void TitleSceneInit(){
 	feedCounter = 0;
-	titleFont = LoadFontDataToHandle("data/font/‚È‚Â‚ß‚à‚¶.dft");
+	titleFont = LoadFontDataToHandle("data/font/ãªã¤ã‚ã‚‚ã˜.dft");
 	assert(titleFont>0);
 	titleFontSize = GetFontSizeToHandle(titleFont);
 	feedOn = false;

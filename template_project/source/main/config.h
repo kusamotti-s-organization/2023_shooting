@@ -1,10 +1,10 @@
-#pragma once
+ï»¿#pragma once
 
-static const int SCREEN_WIDTH		= 1064		;//‰æ–Ê‰¡•
-static const int SCREEN_HEIGHT		= 900		;//‰æ–Ê—§•
-static const BOOL WINDOW_MODE		= TRUE		;//ƒEƒBƒ“ƒhƒEƒ‚[ƒh‚É‚·‚é
-static const BOOL LOGSET_MODE		= FALSE		;//ƒƒO‚Ì‘‚«o‚µİ’è
-static const BOOL CHANGESIZE_MODE	= TRUE		;//“r’†‘å‚«‚³•ÏX‚ ‚è
-static const char* WINDOW_NAME		= "DxLib"	;//ƒEƒBƒ“ƒhƒE–¼
-static const float WINDOW_EXTEND	= 1.0f		;//Šg‘å—¦
-static const int WINDOW_STYLE		= 7			;//ƒEƒBƒ“ƒhƒE‚Ì˜gİ’è
+static const int SCREEN_WIDTH		= 1064		;//ç”»é¢æ¨ªå¹…
+static const int SCREEN_HEIGHT		= 900		;//ç”»é¢ç«‹å¹…
+static const BOOL WINDOW_MODE		= TRUE		;//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒ¢ãƒ¼ãƒ‰ã«ã™ã‚‹
+static const BOOL LOGSET_MODE		= FALSE		;//ãƒ­ã‚°ã®æ›¸ãå‡ºã—è¨­å®š
+static const BOOL CHANGESIZE_MODE	= TRUE		;//é€”ä¸­å¤§ãã•å¤‰æ›´ã‚ã‚Š
+static const char* WINDOW_NAME		= "DxLib"	;//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦å
+static const float WINDOW_EXTEND	= 1.0f		;//æ‹¡å¤§ç‡
+static const int WINDOW_STYLE		= 7			;//ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®æ è¨­å®š

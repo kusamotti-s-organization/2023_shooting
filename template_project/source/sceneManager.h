@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 enum Scene {
 	start = 0
@@ -15,9 +15,9 @@ void Draw_SceneManager();
 void Delete_SceneManager();
 
 /// <summary>
-///		ƒV[ƒ“•ÏX
+///		ã‚·ãƒ¼ãƒ³å¤‰æ›´
 ///		<para> </para>
 /// </summary>
-/// <param name="scene">w’è‚ÌƒV[ƒ“</param>
+/// <param name="scene">æŒ‡å®šã®ã‚·ãƒ¼ãƒ³</param>
 /// <returns></returns>
 bool ChangeScene(Scene scene);

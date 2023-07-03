@@ -1,4 +1,4 @@
-#include "backgroundGraphic.h"
+﻿#include "backgroundGraphic.h"
 
 #include<DxLib.h>
 #include<cassert>
@@ -9,7 +9,7 @@ namespace {
 }
 
 void BackgroundGraphicInit(){
-	backgraphic = LoadGraph("data/texture/�w�i�ʐ^�⊮�̉�/mirai1.jpg");
+	backgraphic = LoadGraph("data/texture/背景写真補完の会/mirai1.jpg");
 	assert(backgraphic > 0);
 }
 

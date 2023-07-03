@@ -1,4 +1,4 @@
-#include "resultScene.h"
+ï»¿#include "resultScene.h"
 
 #include<DxLib.h>
 #include<string>
@@ -9,7 +9,7 @@
 #include"../object/backgroundGraphic.h"
 
 namespace {
-	std::string dispStr = "ƒQ[ƒ€ƒNƒŠƒA";
+	std::string dispStr = "ã‚²ãƒ¼ãƒ ã‚¯ãƒªã‚¢";
 	int fontHandle;
 	int cosCount;
 	int blackCount;
@@ -18,7 +18,7 @@ namespace {
 }
 
 void ResultSceneInit(){
-	fontHandle = LoadFontDataToHandle("data/font/‚È‚Â‚ß‚à‚¶.dft");
+	fontHandle = LoadFontDataToHandle("data/font/ãªã¤ã‚ã‚‚ã˜.dft");
 	assert(fontHandle > 0);
 	cosCount = 0;
 	blackCount = 0;

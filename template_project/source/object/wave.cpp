@@ -1,4 +1,4 @@
-#include "wave.h"
+﻿#include "wave.h"
 
 #include<DxLib.h>
 #include<string>
@@ -29,7 +29,7 @@ namespace {
 void WaveInit(){
 	state = State::start;
 	stateNext = State::start;
-	fontHandle = LoadFontDataToHandle("data/font/�Ȃ߂���.dft");
+	fontHandle = LoadFontDataToHandle("data/font/なつめもじ.dft");
 	assert(fontHandle>0);
 	cosCount = 0;
 	standing = true;

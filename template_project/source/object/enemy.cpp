@@ -1,4 +1,4 @@
-#include "enemy.h"
+ï»¿#include "enemy.h"
 
 #include<DxLib.h>
 #include<cassert>
@@ -44,22 +44,22 @@ void EnemyInit(){
 
 void EnemyUpdate(){
 
-	//“G¶¬I—¹
+	//æ•µç”Ÿæˆçµ‚äº†
 	int instanceGoalNum = MAX_ENEMY_NUM - 1;
 	if (instanceCount >= instanceGoalNum && enemiesKillCount >= instanceGoalNum) {
-		//ƒ{ƒX‚Ì¶¬
-		//iã‚É‚·‚é‘O‚Ì‰¼j‚Æ‚è‚ ‚¦‚¸ƒV[ƒ“‚ğØ‚è‘Ö‚¦‚é
+		//ãƒœã‚¹ã®ç”Ÿæˆ
+		//ï¼ˆä¸Šã«ã™ã‚‹å‰ã®ä»®ï¼‰ã¨ã‚Šã‚ãˆãšã‚·ãƒ¼ãƒ³ã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹
 		ChangeScene(Scene::title);
 	}
 
-	////“G‚Ì¶¬
+	////æ•µã®ç”Ÿæˆ
 	//{
 	//	//float x= 100.f + GetRand(SCREEN_WIDTH - 100);
 	//	//EnemyCreate(x,0,0,1,GetRand(1));
 	//	EnemyMovePattarn(EnemyMovePatternState::left);
 	//}
 
-	//“G‚Ì¶¬
+	//æ•µã®ç”Ÿæˆ
 	//if (enemiesKillCount <= instanceGoalNum)
 	//if (frameCounter% instanceTime == 0) {
 	//	bool instanceSuccess = false;
@@ -82,7 +82,7 @@ void EnemyUpdate(){
 	//	instanceTime = GetRand((int)(60 * ENMEY_INSTANCE_TIME))+1;
 	//}
 
-	//“GˆÚ“®
+	//æ•µç§»å‹•
 	for (int i = 0; i < MAX_ENEMY_NUM; ++i) {
 		Enemy enemy = enemies[i];
 		if ( !enemy.isActive)
@@ -91,7 +91,7 @@ void EnemyUpdate(){
 		enemies[i].m_position.y += enemies[i].m_moveVector.y;
 	}
 
-	//“G‚ªŒ©‚¦‚È‚­‚È‚Á‚½‚ç
+	//æ•µãŒè¦‹ãˆãªããªã£ãŸã‚‰
 	for (int i = 0; i < MAX_ENEMY_NUM; ++i) {
 		Enemy enemy = enemies[i];
 		
@@ -159,7 +159,7 @@ bool EnemyToBulletCollision(float a_x, float a_y, float a_radius){
 
 void EnemyCreate(float x, float y, float mx, float my,bool color){
 	int instanceGoalNum = MAX_ENEMY_NUM - 1;
-	//“G‚Ì¶¬
+	//æ•µã®ç”Ÿæˆ
 	if (frameCounter % instanceTime == 0) {
 		bool instanceSuccess = false;
 		for (int i = 0; i < MAX_ENEMY_NUM; ++i) {

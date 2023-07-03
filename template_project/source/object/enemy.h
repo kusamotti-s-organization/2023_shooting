@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 void EnemyInit();
 void EnemyUpdate();
@@ -12,8 +12,8 @@ int GetInstanceNum();
 void ResetInstanceNum();
 int GetActiveEnemy();
 enum EnemyMovePatternState {
-	left=0//¶‚©‚ç‰E‚Ö
-	,right//‰E‚©‚ç¶‚Ö
+	left=0//å·¦ã‹ã‚‰å³ã¸
+	,right//å³ã‹ã‚‰å·¦ã¸
 	,top
 };
 void EnemyMovePattarn(EnemyMovePatternState pattarn);

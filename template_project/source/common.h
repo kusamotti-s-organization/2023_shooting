@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 struct Position {
 	float x, y;
@@ -25,13 +25,13 @@ inline bool CircleCollision(Circle c1,Circle c2) {
 	return anser;
 }
 
-//•‰‚ÌˆâY‚É‚È‚Á‚Ä‚µ‚Ü‚¤‚©‚à
-//—Lu‚Ì•û‚Å‚«‚é‚¾‚¯’Z‚­‚µ‚½‚â‚Â‚ğì‚Á‚Ä‚İ‚Ä‚­‚ê`
+//è² ã®éºç”£ã«ãªã£ã¦ã—ã¾ã†ã‹ã‚‚
+//æœ‰å¿—ã®æ–¹ã§ãã‚‹ã ã‘çŸ­ãã—ãŸã‚„ã¤ã‚’ä½œã£ã¦ã¿ã¦ãã‚Œï½
 
 namespace color {
-	//h0`360
-	//s0`255
-	//v0`255
+	//h0ï½360
+	//s0ï½255
+	//v0ï½255
 	int inline GetHSV(int h, int s, int v) {
 
 		float hr = (float)h, sg = (float)s, vb = (float)v;

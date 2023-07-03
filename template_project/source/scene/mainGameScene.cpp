@@ -1,4 +1,4 @@
-#include"mainGameScene.h"
+﻿#include"mainGameScene.h"
 
 #include<DxLib.h>
 #include<cmath>

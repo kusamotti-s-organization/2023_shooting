@@ -1,4 +1,4 @@
-#include"destroyEffect.h"
+ï»¿#include"destroyEffect.h"
 
 #include<DxLib.h>
 #include<cmath>
@@ -87,7 +87,7 @@ void EffectOn(float x, float y, float r) {
 }
 
 void FourCircleDraw1(float x, float y, float r) {
-	//0xffffff ”’
+	//0xffffff ç™½
 	float harfHarfRadius = r / 2.f / 2.f;
 	DrawCircleAA(x - harfHarfRadius, y, harfHarfRadius, 22, 0xffffff);
 	DrawCircleAA(x + harfHarfRadius, y, harfHarfRadius, 22, 0xffffff);
@@ -99,7 +99,7 @@ void FourCircleDraw1(Circle circle) {
 }
 
 void FourCircleDraw2(float x, float y, float r) {
-	//0xdd5555 ƒIƒŒƒ“ƒW
+	//0xdd5555 ã‚ªãƒ¬ãƒ³ã‚¸
 	float harfRadius = r / 2;
 	DrawCircleAA(x - harfRadius, y, harfRadius, 22, 0xdd5555);
 	DrawCircleAA(x + harfRadius, y, harfRadius, 22, 0xdd5555);
@@ -111,7 +111,7 @@ void FourCircleDraw2(Circle circle) {
 }
 
 void StarCricleDraw(float x, float y, float r) {
-	//0xff0000 ^‚ÁÔ
+	//0xff0000 çœŸã£èµ¤
 	DrawOvalAA(x, y, r / 2, r * 2, 22, 0xff0000, TRUE);
 	DrawOvalAA(x, y, r * 2, r / 2, 22, 0xff0000, TRUE);
 }
@@ -120,10 +120,10 @@ void StarCricleDraw(Circle circle) {
 }
 
 void DestroyEffectMob() {
-	//‚ƒGƒlƒ‹ƒM[‚È‚Ù‚Ç”’‚­‚·‚éB
-	//‚¾‚ñ‚¾‚ñÔ‚­
-	//ÅŒã‚ÍÔ@”¼“§–¾‚Å¬‚³‚­
-	//‰~‚ğ‚©‚Ô‚¹‚Ä¬‚³‚­‚·‚é
+	//é«˜ã‚¨ãƒãƒ«ã‚®ãƒ¼ãªã»ã©ç™½ãã™ã‚‹ã€‚
+	//ã ã‚“ã ã‚“èµ¤ã
+	//æœ€å¾Œã¯èµ¤ã€€åŠé€æ˜ã§å°ã•ã
+	//å††ã‚’ã‹ã¶ã›ã¦å°ã•ãã™ã‚‹
 	for (int i = 0; i < MAX_EFFECT_NUM; ++i) {
 		if (!effects[i].active)
 			continue;
@@ -171,10 +171,10 @@ void DestroyEffectMob() {
 
 }
 //void DestroyEffectMob(float x, float y, float r) {
-//	//‚ƒGƒlƒ‹ƒM[‚È‚Ù‚Ç”’‚­‚·‚éB
-//	//‚¾‚ñ‚¾‚ñÔ‚­
-//	//ÅŒã‚ÍÔ@”¼“§–¾‚Å¬‚³‚­
-//	//‰~‚ğ‚©‚Ô‚¹‚Ä¬‚³‚­‚·‚é
+//	//é«˜ã‚¨ãƒãƒ«ã‚®ãƒ¼ãªã»ã©ç™½ãã™ã‚‹ã€‚
+//	//ã ã‚“ã ã‚“èµ¤ã
+//	//æœ€å¾Œã¯èµ¤ã€€åŠé€æ˜ã§å°ã•ã
+//	//å††ã‚’ã‹ã¶ã›ã¦å°ã•ãã™ã‚‹
 //	for (int i = 0; i < MAX_EFFECT_NUM; ++i) {
 //		if (!effects[i].active)
 //			continue;

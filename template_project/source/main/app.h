@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 namespace APP {
 	void Init()		;
@@ -7,10 +7,10 @@ namespace APP {
 	void Delete()	;
 
 	/// <summary>
-	/// ƒQ[ƒ€‘S‘Ì‚ÌI—¹ƒtƒ‰ƒO
+	/// ã‚²ãƒ¼ãƒ å…¨ä½“ã®çµ‚äº†ãƒ•ãƒ©ã‚°
 	/// </summary>
-	/// <param name="true	">I—¹</param>
-	/// <param name="false	">‘±s</param>
+	/// <param name="true	">çµ‚äº†</param>
+	/// <param name="false	">ç¶šè¡Œ</param>
 	/// <returns></returns>
 	bool GameEnd()	;
 }

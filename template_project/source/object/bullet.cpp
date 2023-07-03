@@ -1,4 +1,4 @@
-#include "bullet.h"
+ï»¿#include "bullet.h"
 
 #include<DxLib.h>
 #include"../common.h"
@@ -27,7 +27,7 @@ void BulletInit(){
 
 void BulletUpdate(){
 
-	//(‰¼)’e ˆÚ“®
+	//(ä»®)å¼¾ ç§»å‹•
 	for (int i = 0; i < MAX_BULLET_NUM; ++i) {
 		Bullet bullet = bullets[i];
 		if (!bullet.isActive)
@@ -36,7 +36,7 @@ void BulletUpdate(){
 		bullets[i].m_position.y += -BULLET_SPEED;
 	}
 
-	//‰æ–ÊŠO‚Ì’e‚ðÁ‚·
+	//ç”»é¢å¤–ã®å¼¾ã‚’æ¶ˆã™
 	for (int i = 0; i < MAX_BULLET_NUM; ++i) {
 		Bullet bullet = bullets[i];
 		if (!bullet.isActive)
@@ -48,7 +48,7 @@ void BulletUpdate(){
 		bullets[i].m_position = Position{0,0};
 	}
 
-	//Enemy‚Æ“–‚½‚Á‚½‚©‚Ç‚¤‚©
+	//Enemyã¨å½“ãŸã£ãŸã‹ã©ã†ã‹
 	for (int i = 0; i < MAX_BULLET_NUM; ++i) {
 		Bullet bullet = bullets[i];
 		if (!bullet.isActive)
