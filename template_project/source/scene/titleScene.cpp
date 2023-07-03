@@ -64,7 +64,7 @@ void TitleSceneDraw(){
 	{
 		float feed = (cos((feedCounter)*DX_PI_F / 180) + 1) / 2;//フェード cos結果
 		//半透明を設定
-		SetDrawBlendMode(DX_BLENDMODE_ALPHA, 255 * feed);
+		SetDrawBlendMode(DX_BLENDMODE_ALPHA,(int)(255 * feed));
 		//真っ黒にする
 		DrawBox(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0x0, TRUE);
 	}
