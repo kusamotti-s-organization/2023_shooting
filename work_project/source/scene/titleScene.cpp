@@ -81,6 +81,14 @@ void TitleSceneDraw(){
 	DrawFormatStringToHandle(x,y,0xffffff,titleFont,dispStr.c_str());
 	//文字描画
 	DrawFormatString(SCREEN_WIDTH/2,SCREEN_HEIGHT/2,0x0fffff,"Title");
+
+	std::string explanation = "操作方法\n";
+	explanation += "WASDで移動\n";
+	explanation += "左マウスで単発\n";
+	explanation += "右マウスで連射\n";
+	explanation += "";
+	DrawFormatString(10, 10, 0xffffff, explanation.c_str());
+
 	//半透明解除
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND,0);
 }
